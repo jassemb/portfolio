@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
-  initSkillBars();
   initScrollAnimations();
   initNavHighlight();
 });
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function initMobileMenu() {
   const btn = document.querySelector('.mobile-menu-btn');
   const nav = document.querySelector('.mobile-nav');
-
   if (!btn || !nav) return;
 
   btn.addEventListener('click', () => {
@@ -24,51 +22,26 @@ function initMobileMenu() {
   });
 }
 
-function initSkillBars() {
-  const skills = document.querySelectorAll('.skill');
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const level = entry.target.dataset.level;
-          const fill = entry.target.querySelector('.skill-fill');
-          if (fill) {
-            fill.style.width = `${level}%`;
-          }
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
-
-  skills.forEach((skill) => observer.observe(skill));
-}
-
 function initScrollAnimations() {
-  const cards = document.querySelectorAll(
-    '.glass-card, .timeline-item, .section-title'
+  const targets = document.querySelectorAll(
+    '.glass-card, .timeline-item, .section-header, .contact-card'
   );
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
   );
 
-  cards.forEach((card) => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(card);
+  targets.forEach((el) => {
+    el.classList.add('fade-in');
+    observer.observe(el);
   });
 }
 
@@ -82,13 +55,12 @@ function initNavHighlight() {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('id');
           navLinks.forEach((link) => {
-            const isActive = link.getAttribute('href') === `#${id}`;
-            link.style.color = isActive ? 'var(--cyan)' : '';
+            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
           });
         }
       });
     },
-    { threshold: 0.3, rootMargin: '-80px 0px -50% 0px' }
+    { threshold: 0.25, rootMargin: '-70px 0px -55% 0px' }
   );
 
   sections.forEach((section) => observer.observe(section));

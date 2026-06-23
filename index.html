@@ -1,127 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DevSecOps Engineer portfolio — automated security integration, cloud infrastructure, and high-availability systems.">
-  <title>SEC_OPS // PORTFOLIO</title>
+  <meta name="description" content="Ben Ali Jassem — Ingénieur DevSecOps. CI/CD, sécurité cloud, Terraform, GitLab, Docker, SonarQube, Trivy.">
+  <title>Ben Ali Jassem — DevSecOps</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
   <div class="scanlines" aria-hidden="true"></div>
 
-  <!-- Navigation -->
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#" class="logo">SEC_OPS <span class="logo-sep">//</span> PORTFOLIO</a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#experience">LOG_EXP</a>
-        <a href="#tech-stack">TECH_STACK</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#academic">ACADEMIC</a>
+      <a href="#hero" class="logo">JASSEM<span class="logo-sep">//</span>DEVSECOPS</a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#experience">EXPÉRIENCE</a>
+        <a href="#tech-stack">COMPÉTENCES</a>
+        <a href="#projects">PROJETS</a>
+        <a href="#academic">FORMATION</a>
+        <a href="#contact">CONTACT</a>
       </nav>
       <div class="nav-status">
         <span class="status-dot"></span>
-        <span class="status-text">SYSTEM_STATUS: OK</span>
-        <button class="icon-btn" aria-label="Language">🌐</button>
+        <span class="status-text">DISPONIBLE</span>
       </div>
-      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- Mobile Nav -->
-  <nav class="mobile-nav" aria-label="Mobile navigation">
-    <a href="#experience">LOG_EXP</a>
-    <a href="#tech-stack">TECH_STACK</a>
-    <a href="#projects">PROJECTS</a>
-    <a href="#academic">ACADEMIC</a>
+  <nav class="mobile-nav" aria-label="Navigation mobile">
+    <a href="#experience">EXPÉRIENCE</a>
+    <a href="#tech-stack">COMPÉTENCES</a>
+    <a href="#projects">PROJETS</a>
+    <a href="#academic">FORMATION</a>
+    <a href="#contact">CONTACT</a>
   </nav>
 
   <main>
-    <!-- Hero -->
     <section class="hero" id="hero">
       <div class="container hero-grid">
         <div class="hero-content">
           <div class="status-badge">
             <span class="status-dot"></span>
-            SYSTEM STATUS: STABLE
+            INGÉNIEUR DEVSECOPS · 3+ ANS
           </div>
-          <h1 class="hero-title">Securing the Pipeline of the Future</h1>
+          <p class="hero-greeting">// initialisation du profil</p>
+          <h1 class="hero-name">Ben Ali <span class="text-gradient">Jassem</span></h1>
+          <p class="hero-title-role">Ingénieur DevSecOps</p>
           <p class="hero-desc">
-            DevSecOps Engineer specializing in automated security integration,
-            cloud infrastructure orchestration, and high-availability systems.
-            Building resilient environments for modern enterprise scales.
+            Ingénieur DevSecOps avec plus de 3 ans d'expérience en automatisation CI/CD,
+            sécurisation des infrastructures cloud et DevOps en environnement bancaire et entreprise.
+            Expertise en AWS, Terraform, GitLab CI/CD, Docker et sécurité applicative (SonarQube, Trivy).
+            Focus sur la fiabilité, la sécurité et la scalabilité des systèmes.
           </p>
+          <div class="contact-pills">
+            <a href="mailto:jassembenali53@gmail.com" class="contact-pill">
+              <span class="pill-icon">✉</span> jassembenali53@gmail.com
+            </a>
+            <a href="tel:+21629850760" class="contact-pill">
+              <span class="pill-icon">☎</span> +216 29 850 760
+            </a>
+          </div>
           <div class="hero-actions">
-            <a href="mailto:contact@devsecops.dev" class="btn btn-primary">SEND_EMAIL</a>
-            <a href="#" class="btn btn-outline">DOWNLOAD_RESUME</a>
+            <a href="mailto:jassembenali53@gmail.com" class="btn btn-primary">ME_CONTACTER</a>
+            <a href="https://www.linkedin.com/in/jassem-ben-ali" class="btn btn-outline" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+            <a href="https://github.com/jassemb" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GITHUB</a>
           </div>
         </div>
-        <div class="terminal-window" aria-label="Terminal output">
+        <div class="terminal-window" aria-label="Terminal">
           <div class="terminal-header">
             <span class="dot dot-red"></span>
             <span class="dot dot-yellow"></span>
             <span class="dot dot-green"></span>
-            <span class="terminal-title">Terminal — zsh</span>
+            <span class="terminal-title">jassem@devsecops — zsh</span>
           </div>
           <div class="terminal-body">
-            <p><span class="prompt">λ</span> terraform init</p>
-            <p class="output">Initializing modules...</p>
-            <p><span class="prompt">λ</span> checkov -d ./infrastructure</p>
-            <p class="output success">Passed: 42, Failed: 0, Skipped: 2</p>
-            <p><span class="prompt">λ</span> deployment_status --env production</p>
-            <p class="output">Running security scan on cluster-01... <span class="done">[DONE]</span></p>
-            <p class="operator-log">OPERATOR_LOG : SESSION_ACTIVE<span class="cursor-blink">_</span></p>
+            <p><span class="prompt">λ</span> whoami</p>
+            <p class="output success">ben_ali_jassem — devsecops_engineer</p>
+            <p><span class="prompt">λ</span> gitlab-ci lint .gitlab-ci.yml</p>
+            <p class="output">Pipeline validé · stages: build → scan → deploy</p>
+            <p><span class="prompt">λ</span> trivy image --severity HIGH,CRITICAL app:latest</p>
+            <p class="output success">0 vulnérabilités critiques détectées</p>
+            <p><span class="prompt">λ</span> terraform plan -out=prod.tfplan</p>
+            <p class="output">Plan: 12 to add, 0 to change, 0 to destroy <span class="done">[OK]</span></p>
+            <p class="operator-log">SESSION_ACTIVE<span class="cursor-blink">_</span></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Experience -->
     <section class="section" id="experience">
       <div class="container">
-        <h2 class="section-title"><span class="title-bar">|</span> EXPERIENCE_LOG</h2>
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-bar">|</span> EXPÉRIENCE_PRO</h2>
+          <p class="section-sub">Parcours en environnement bancaire et cloud</p>
+        </div>
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-node active"></div>
             <div class="timeline-content glass-card">
               <div class="timeline-meta">
-                <span class="timeline-date">2022 — PRESENT</span>
-                <h3 class="timeline-role">DevSecOps Engineer @ Conseil Bancaire</h3>
+                <span class="timeline-date">FÉV. 2025 — PRÉSENT</span>
+                <h3 class="timeline-role">Ingénieur DevSecOps · Conseil Bancaire et Financier</h3>
               </div>
               <ul class="timeline-bullets">
-                <li>Implemented SAST/DAST pipelines across 12 microservices, reducing vulnerability exposure by 60%</li>
-                <li>Orchestrated Kubernetes clusters with automated compliance scanning and policy enforcement</li>
+                <li>Mise en place d'un environnement DevSecOps intégrant GitLab CI/CD, SonarQube et Trivy</li>
+                <li>Automatisation des pipelines CI/CD, analyse qualité du code et scan de vulnérabilités</li>
+                <li>Application des bonnes pratiques DevSecOps pour sécuriser le cycle de développement (SDLC)</li>
               </ul>
               <div class="tech-chips">
+                <span class="chip">GITLAB CI/CD</span>
+                <span class="chip">SONARQUBE</span>
+                <span class="chip">TRIVY</span>
                 <span class="chip">TERRAFORM</span>
-                <span class="chip">KUBERNETES</span>
-                <span class="chip">JENKINS</span>
-                <span class="chip">VAULT</span>
+                <span class="chip">DOCKER</span>
               </div>
             </div>
           </article>
+
           <article class="timeline-item">
             <div class="timeline-node"></div>
             <div class="timeline-content glass-card">
               <div class="timeline-meta">
-                <span class="timeline-date">2020 — 2022</span>
-                <h3 class="timeline-role">Cloud Security Specialist @ Campusna</h3>
+                <span class="timeline-date">JUIN 2023 — JAN. 2025</span>
+                <h3 class="timeline-role">Ingénieur DevOps · Campusna</h3>
               </div>
               <ul class="timeline-bullets">
-                <li>Designed zero-trust architecture for multi-cloud environments across AWS and Azure</li>
-                <li>Optimized CI/CD pipelines reducing deployment time by 40% while maintaining security gates</li>
+                <li>Provisionnement d'infrastructure avec Terraform (serveurs, réseaux, stockage)</li>
+                <li>Pipelines CI/CD avec Jenkins et GitLab — réduction du time-to-market de 30 %</li>
+                <li>Gestion de configuration Ansible et monitoring Datadog / AWS CloudWatch (+25 % performances)</li>
+                <li>50+ images Docker, 50+ instances EC2 et rôles IAM AWS gérés en production</li>
+                <li>Solutions de sauvegarde automatique et documentation des infrastructures</li>
               </ul>
+              <div class="metric-row">
+                <div class="metric-badge"><span class="metric-value">-30%</span><span class="metric-label">Time-to-market</span></div>
+                <div class="metric-badge"><span class="metric-value">+25%</span><span class="metric-label">Performances</span></div>
+                <div class="metric-badge"><span class="metric-value">50+</span><span class="metric-label">Images Docker</span></div>
+              </div>
               <div class="tech-chips">
                 <span class="chip">AWS</span>
-                <span class="chip">DOCKER</span>
+                <span class="chip">TERRAFORM</span>
                 <span class="chip">ANSIBLE</span>
+                <span class="chip">JENKINS</span>
+                <span class="chip">DATADOG</span>
               </div>
             </div>
           </article>
@@ -129,182 +158,277 @@
       </div>
     </section>
 
-    <!-- Tech Stack -->
-    <section class="section" id="tech-stack">
+    <section class="section section-alt" id="projects">
       <div class="container">
-        <h2 class="section-title"><span class="title-bar">|</span> TECH_STACK</h2>
-        <div class="tech-grid">
-          <div class="tech-card glass-card">
-            <div class="tech-card-icon">⬡</div>
-            <h3 class="tech-card-title">Infrastructure</h3>
-            <div class="skill" data-level="55">
-              <div class="skill-header"><span>AWS / Azure</span><span class="skill-pct">55%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill" data-level="90">
-              <div class="skill-header"><span>Terraform</span><span class="skill-pct">90%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill" data-level="80">
-              <div class="skill-header"><span>Kubernetes</span><span class="skill-pct">80%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-          </div>
-          <div class="tech-card glass-card">
-            <div class="tech-card-icon">⟳</div>
-            <h3 class="tech-card-title">Pipelines</h3>
-            <div class="skill" data-level="95">
-              <div class="skill-header"><span>Jenkins</span><span class="skill-pct">95%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill" data-level="85">
-              <div class="skill-header"><span>GitLab CI</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill" data-level="75">
-              <div class="skill-header"><span>ArgoCD</span><span class="skill-pct">75%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-          </div>
-          <div class="tech-card glass-card">
-            <div class="tech-card-icon">&lt;/&gt;</div>
-            <h3 class="tech-card-title">Development</h3>
-            <div class="skill" data-level="70">
-              <div class="skill-header"><span>Go</span><span class="skill-pct">70%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill" data-level="85">
-              <div class="skill-header"><span>Python</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill" data-level="95">
-              <div class="skill-header"><span>Bash</span><span class="skill-pct">95%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-          </div>
-          <div class="tech-card glass-card">
-            <div class="tech-card-icon">🛡</div>
-            <h3 class="tech-card-title">Security</h3>
-            <div class="skill" data-level="90">
-              <div class="skill-header"><span>HashiCorp Vault</span><span class="skill-pct">90%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill" data-level="85">
-              <div class="skill-header"><span>SonarQube</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill" data-level="75">
-              <div class="skill-header"><span>OWASP ZAP</span><span class="skill-pct">75%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-bar">|</span> PROJETS_CLÉS</h2>
+          <p class="section-sub">Plateformes et outils développés en production</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Projects -->
-    <section class="section" id="projects">
-      <div class="container">
-        <h2 class="section-title"><span class="title-bar">|</span> PROJECT_REPOSITORY</h2>
-
-        <article class="featured-project glass-card">
+        <article class="featured-project glass-card glow-border">
           <div class="featured-image">
             <div class="dashboard-mockup">
               <div class="mockup-bar">
                 <span class="dot dot-red"></span>
                 <span class="dot dot-yellow"></span>
                 <span class="dot dot-green"></span>
+                <span class="mockup-title">Cytowr SOC Dashboard</span>
               </div>
               <div class="mockup-content">
-                <div class="mockup-sidebar"></div>
+                <div class="mockup-sidebar">
+                  <div class="sidebar-item active"></div>
+                  <div class="sidebar-item"></div>
+                  <div class="sidebar-item"></div>
+                </div>
                 <div class="mockup-main">
-                  <div class="mockup-chart"></div>
+                  <div class="mockup-chart">
+                    <div class="chart-line"></div>
+                  </div>
                   <div class="mockup-stats">
-                    <div class="stat-block"></div>
-                    <div class="stat-block"></div>
-                    <div class="stat-block"></div>
+                    <div class="stat-block"><span>Alerts</span><strong>24</strong></div>
+                    <div class="stat-block"><span>Incidents</span><strong>7</strong></div>
+                    <div class="stat-block"><span>Resolved</span><strong>18</strong></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="featured-content">
-            <span class="featured-label">FEATURED_NODE</span>
-            <h3 class="featured-title">CYTOWR</h3>
+            <span class="featured-label">PROJET_PHARE · SOC</span>
+            <h3 class="featured-title">Cytowr</h3>
+            <p class="featured-subtitle">Plateforme Full-Stack d'opérations de sécurité</p>
             <p class="featured-desc">
-              Security orchestration platform built with Go and Kubernetes.
-              Automates threat detection, policy enforcement, and incident
-              response across distributed cloud infrastructure.
+              Plateforme centralisée permettant aux équipes SOC de gérer et traiter les incidents
+              de sécurité sur plusieurs environnements clients. Workflows complets : triage des alertes,
+              investigation, suivi des réponses et gestion des cas.
             </p>
-            <a href="https://github.com" class="repo-link" target="_blank" rel="noopener noreferrer">
-              VIEW_REPOSITORY ↗
-            </a>
+            <ul class="featured-list">
+              <li>Backend Django REST Framework · Frontend Next.js / React / TypeScript</li>
+              <li>Authentification OIDC / Authentik · RBAC</li>
+              <li>Threat Intelligence : VirusTotal, AbuseIPDB, Hybrid Analysis, intégrations SIEM</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">#Django</span>
+              <span class="tag">#Next.js</span>
+              <span class="tag">#PostgreSQL</span>
+              <span class="tag">#Docker</span>
+            </div>
           </div>
         </article>
 
         <div class="project-grid">
           <article class="project-card glass-card">
-            <span class="project-label">CI/CD</span>
+            <span class="project-label">GESTION · CBF</span>
             <h3 class="project-title">TaskFlow</h3>
-            <p class="project-desc">Workflow manager for multi-cloud deployment pipelines with built-in approval gates.</p>
+            <p class="project-desc">Application de gestion de projets dédiée au suivi des tâches et à la collaboration des équipes. Amélioration de l'organisation des workflows et de la productivité.</p>
             <div class="project-tags">
               <span class="tag">#Python</span>
-              <span class="tag">#Docker</span>
-              <span class="tag">#Azure</span>
+              <span class="tag">#Web</span>
             </div>
           </article>
           <article class="project-card glass-card">
-            <span class="project-label">HSEC</span>
-            <h3 class="project-title">Security Reviews</h3>
-            <p class="project-desc">Collection of hardening scripts and compliance checklists for enterprise infrastructure.</p>
+            <span class="project-label">SÉCURITÉ · CBF</span>
+            <h3 class="project-title">Tests d'intrusion & revue de code</h3>
+            <p class="project-desc">Contribution aux tests d'intrusion web/mobile et revues de code sécurisé pour BNA Bank, STB Bank, AMEN Bank, ABC Bank et Unifactor.</p>
             <div class="project-tags">
-              <span class="tag">#Shell</span>
-              <span class="tag">#Ansible</span>
-              <span class="tag">#CIS_Benchmarks</span>
+              <span class="tag">#Pentest</span>
+              <span class="tag">#Secure_Code_Review</span>
+            </div>
+          </article>
+          <article class="project-card glass-card">
+            <span class="project-label">RH · CBF</span>
+            <h3 class="project-title">Gestion des retenues sur salaire</h3>
+            <p class="project-desc">Application dédiée à la gestion des retenues sur salaire avec suivi structuré des types de retenues et automatisation des traitements.</p>
+            <div class="project-tags">
+              <span class="tag">#Full_Stack</span>
+            </div>
+          </article>
+          <article class="project-card glass-card">
+            <span class="project-label">BANQUE · EN COURS</span>
+            <h3 class="project-title">Déclarations de retenues — BCT</h3>
+            <p class="project-desc">Plateforme permettant aux banques de gérer et déclarer les retenues liées aux réclamations d'incidents auprès de la Banque Centrale de Tunisie.</p>
+            <div class="project-tags">
+              <span class="tag">#En_développement</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Academic -->
-    <section class="section" id="academic">
+    <section class="section" id="tech-stack">
       <div class="container">
-        <h2 class="section-title"><span class="title-bar">|</span> ACADEMIC_NODE</h2>
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-bar">|</span> COMPÉTENCES_TECH</h2>
+          <p class="section-sub">Stack technique et outils maîtrisés</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group glass-card">
+            <div class="skill-group-header">
+              <span class="skill-group-icon">☁</span>
+              <h3>Infrastructure Cloud</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">AWS</span>
+              <span class="skill-tag highlight">Terraform</span>
+              <span class="skill-tag">Ansible</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+          <div class="skill-group glass-card">
+            <div class="skill-group-header">
+              <span class="skill-group-icon">⟳</span>
+              <h3>CI/CD & DevSecOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">GitLab CI/CD</span>
+              <span class="skill-tag highlight">Jenkins</span>
+              <span class="skill-tag highlight">SonarQube</span>
+              <span class="skill-tag highlight">Trivy</span>
+              <span class="skill-tag">Datadog</span>
+              <span class="skill-tag">CloudWatch</span>
+            </div>
+          </div>
+          <div class="skill-group glass-card">
+            <div class="skill-group-header">
+              <span class="skill-group-icon">&lt;/&gt;</span>
+              <h3>Développement</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">Python</span>
+              <span class="skill-tag highlight">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">Flutter</span>
+            </div>
+          </div>
+          <div class="skill-group glass-card">
+            <div class="skill-group-header">
+              <span class="skill-group-icon">⬡</span>
+              <h3>Data & Réseaux</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Cisco IOS</span>
+              <span class="skill-tag">JIRA</span>
+              <span class="skill-tag">Trello</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="soft-section">
+          <div class="soft-block glass-card">
+            <h3 class="soft-title">Compétences transverses</h3>
+            <div class="soft-tags">
+              <span class="soft-tag">Communication</span>
+              <span class="soft-tag">Travail d'équipe</span>
+              <span class="soft-tag">Adaptabilité</span>
+              <span class="soft-tag">Gestion du temps</span>
+              <span class="soft-tag">Résolution de problèmes</span>
+            </div>
+          </div>
+          <div class="soft-block glass-card">
+            <h3 class="soft-title">Langues</h3>
+            <div class="lang-list">
+              <div class="lang-item">
+                <span class="lang-name">Français</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Arabe</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Anglais</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="academic">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-bar">|</span> FORMATION</h2>
+          <p class="section-sub">Parcours académique</p>
+        </div>
         <div class="academic-grid">
           <article class="academic-card glass-card">
+            <div class="academic-year">2021 — 2023</div>
             <div class="academic-icon">🎓</div>
             <h3 class="academic-title">Holberton School</h3>
-            <p class="academic-degree">Full Stack Software Engineering</p>
-            <p class="academic-focus">Focus on Linux, C, and infrastructure fundamentals</p>
+            <p class="academic-degree">Développement Web Full Stack</p>
+            <p class="academic-focus">Tunis, Tunisie · Linux, C, infrastructure</p>
           </article>
           <article class="academic-card glass-card">
-            <div class="academic-icon">📚</div>
-            <h3 class="academic-title">Sfax University</h3>
-            <p class="academic-degree">Computer Science Bachelor</p>
-            <p class="academic-focus">Focus on networking and information security</p>
+            <div class="academic-year">2016 — 2018</div>
+            <div class="academic-icon">📡</div>
+            <h3 class="academic-title">Faculté des Sciences de Sfax</h3>
+            <p class="academic-degree">Master Professionnel — Réseaux & Systèmes de Communication</p>
+            <p class="academic-focus">Réseaux informatiques et télécommunications</p>
           </article>
+          <article class="academic-card glass-card">
+            <div class="academic-year">2013 — 2016</div>
+            <div class="academic-icon">📚</div>
+            <h3 class="academic-title">Faculté des Sciences de Sfax</h3>
+            <p class="academic-degree">Licence — Réseaux Informatiques</p>
+            <p class="academic-focus">Fondamentaux réseaux et systèmes</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card glass-card glow-border">
+          <div class="contact-card-content">
+            <h2 class="contact-title">Prêt à sécuriser votre pipeline ?</h2>
+            <p class="contact-desc">Disponible pour des opportunités DevSecOps, cloud et sécurité applicative.</p>
+            <div class="contact-actions">
+              <a href="mailto:jassembenali53@gmail.com" class="btn btn-primary">jassembenali53@gmail.com</a>
+              <a href="tel:+21629850760" class="btn btn-outline">+216 29 850 760</a>
+            </div>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/jassem-ben-ali" class="social-link" target="_blank" rel="noopener noreferrer">
+              <span class="social-label">LinkedIn</span>
+              <span class="social-url">/in/jassem-ben-ali</span>
+            </a>
+            <a href="https://github.com/jassemb" class="social-link" target="_blank" rel="noopener noreferrer">
+              <span class="social-label">GitHub</span>
+              <span class="social-url">/jassemb</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-logs">
-        <p class="log-entry"><span class="log-time">[09:42:12]</span> LOAD_PORTFOLIO: <span class="log-success">SUCCESS</span></p>
-        <p class="log-entry"><span class="log-time">[09:42:18]</span> FETCHING_EXPERIENCE: 2 NODES FOUND</p>
-        <p class="log-entry"><span class="log-time">[10:05:45]</span> SYNCING GITHUB REPOS... <span class="log-success">[COMPLETE]</span></p>
+        <p class="log-entry"><span class="log-time">[init]</span> LOAD_PROFILE: <span class="log-success">Ben Ali Jassem</span></p>
+        <p class="log-entry"><span class="log-time">[sync]</span> EXPERIENCE_NODES: <span class="log-success">2 FOUND</span></p>
+        <p class="log-entry"><span class="log-time">[ok]</span> STATUS: <span class="log-success">DISPONIBLE</span></p>
       </div>
       <div class="footer-links">
-        <a href="#">ST_LOGS</a>
-        <a href="#">PUBLIC_KEY</a>
-        <a href="#">NETWORK_MAP</a>
+        <a href="mailto:jassembenali53@gmail.com">EMAIL</a>
+        <a href="https://www.linkedin.com/in/jassem-ben-ali" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+        <a href="https://github.com/jassemb" target="_blank" rel="noopener noreferrer">GITHUB</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2024 DEVSEC_KERNEL. ALL RIGHTS RESERVED. <span class="encrypted">[STATUS: ENCRYPTED]</span></p>
+      <p>© 2025 Ben Ali Jassem · Ingénieur DevSecOps · Tunisie</p>
     </div>
   </footer>
 
