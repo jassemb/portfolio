@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevSecOps Engineer portfolio — automated security integration, cloud infrastructure, and high-availability systems.">
+  <title>SEC_OPS // PORTFOLIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">SEC_OPS <span class="logo-sep">//</span> PORTFOLIO</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#experience">LOG_EXP</a>
+        <a href="#tech-stack">TECH_STACK</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#academic">ACADEMIC</a>
+      </nav>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">SYSTEM_STATUS: OK</span>
+        <button class="icon-btn" aria-label="Language">🌐</button>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#experience">LOG_EXP</a>
+    <a href="#tech-stack">TECH_STACK</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#academic">ACADEMIC</a>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            SYSTEM STATUS: STABLE
+          </div>
+          <h1 class="hero-title">Securing the Pipeline of the Future</h1>
+          <p class="hero-desc">
+            DevSecOps Engineer specializing in automated security integration,
+            cloud infrastructure orchestration, and high-availability systems.
+            Building resilient environments for modern enterprise scales.
+          </p>
+          <div class="hero-actions">
+            <a href="mailto:contact@devsecops.dev" class="btn btn-primary">SEND_EMAIL</a>
+            <a href="#" class="btn btn-outline">DOWNLOAD_RESUME</a>
+          </div>
+        </div>
+        <div class="terminal-window" aria-label="Terminal output">
+          <div class="terminal-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">Terminal — zsh</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">λ</span> terraform init</p>
+            <p class="output">Initializing modules...</p>
+            <p><span class="prompt">λ</span> checkov -d ./infrastructure</p>
+            <p class="output success">Passed: 42, Failed: 0, Skipped: 2</p>
+            <p><span class="prompt">λ</span> deployment_status --env production</p>
+            <p class="output">Running security scan on cluster-01... <span class="done">[DONE]</span></p>
+            <p class="operator-log">OPERATOR_LOG : SESSION_ACTIVE<span class="cursor-blink">_</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title"><span class="title-bar">|</span> EXPERIENCE_LOG</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-node active"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2022 — PRESENT</span>
+                <h3 class="timeline-role">DevSecOps Engineer @ Conseil Bancaire</h3>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Implemented SAST/DAST pipelines across 12 microservices, reducing vulnerability exposure by 60%</li>
+                <li>Orchestrated Kubernetes clusters with automated compliance scanning and policy enforcement</li>
+              </ul>
+              <div class="tech-chips">
+                <span class="chip">TERRAFORM</span>
+                <span class="chip">KUBERNETES</span>
+                <span class="chip">JENKINS</span>
+                <span class="chip">VAULT</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2020 — 2022</span>
+                <h3 class="timeline-role">Cloud Security Specialist @ Campusna</h3>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Designed zero-trust architecture for multi-cloud environments across AWS and Azure</li>
+                <li>Optimized CI/CD pipelines reducing deployment time by 40% while maintaining security gates</li>
+              </ul>
+              <div class="tech-chips">
+                <span class="chip">AWS</span>
+                <span class="chip">DOCKER</span>
+                <span class="chip">ANSIBLE</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section" id="tech-stack">
+      <div class="container">
+        <h2 class="section-title"><span class="title-bar">|</span> TECH_STACK</h2>
+        <div class="tech-grid">
+          <div class="tech-card glass-card">
+            <div class="tech-card-icon">⬡</div>
+            <h3 class="tech-card-title">Infrastructure</h3>
+            <div class="skill" data-level="55">
+              <div class="skill-header"><span>AWS / Azure</span><span class="skill-pct">55%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill" data-level="90">
+              <div class="skill-header"><span>Terraform</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill" data-level="80">
+              <div class="skill-header"><span>Kubernetes</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+          <div class="tech-card glass-card">
+            <div class="tech-card-icon">⟳</div>
+            <h3 class="tech-card-title">Pipelines</h3>
+            <div class="skill" data-level="95">
+              <div class="skill-header"><span>Jenkins</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill" data-level="85">
+              <div class="skill-header"><span>GitLab CI</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill" data-level="75">
+              <div class="skill-header"><span>ArgoCD</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+          <div class="tech-card glass-card">
+            <div class="tech-card-icon">&lt;/&gt;</div>
+            <h3 class="tech-card-title">Development</h3>
+            <div class="skill" data-level="70">
+              <div class="skill-header"><span>Go</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill" data-level="85">
+              <div class="skill-header"><span>Python</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill" data-level="95">
+              <div class="skill-header"><span>Bash</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+          <div class="tech-card glass-card">
+            <div class="tech-card-icon">🛡</div>
+            <h3 class="tech-card-title">Security</h3>
+            <div class="skill" data-level="90">
+              <div class="skill-header"><span>HashiCorp Vault</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill" data-level="85">
+              <div class="skill-header"><span>SonarQube</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill" data-level="75">
+              <div class="skill-header"><span>OWASP ZAP</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span class="title-bar">|</span> PROJECT_REPOSITORY</h2>
+
+        <article class="featured-project glass-card">
+          <div class="featured-image">
+            <div class="dashboard-mockup">
+              <div class="mockup-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="mockup-content">
+                <div class="mockup-sidebar"></div>
+                <div class="mockup-main">
+                  <div class="mockup-chart"></div>
+                  <div class="mockup-stats">
+                    <div class="stat-block"></div>
+                    <div class="stat-block"></div>
+                    <div class="stat-block"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="featured-label">FEATURED_NODE</span>
+            <h3 class="featured-title">CYTOWR</h3>
+            <p class="featured-desc">
+              Security orchestration platform built with Go and Kubernetes.
+              Automates threat detection, policy enforcement, and incident
+              response across distributed cloud infrastructure.
+            </p>
+            <a href="https://github.com" class="repo-link" target="_blank" rel="noopener noreferrer">
+              VIEW_REPOSITORY ↗
+            </a>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card glass-card">
+            <span class="project-label">CI/CD</span>
+            <h3 class="project-title">TaskFlow</h3>
+            <p class="project-desc">Workflow manager for multi-cloud deployment pipelines with built-in approval gates.</p>
+            <div class="project-tags">
+              <span class="tag">#Python</span>
+              <span class="tag">#Docker</span>
+              <span class="tag">#Azure</span>
+            </div>
+          </article>
+          <article class="project-card glass-card">
+            <span class="project-label">HSEC</span>
+            <h3 class="project-title">Security Reviews</h3>
+            <p class="project-desc">Collection of hardening scripts and compliance checklists for enterprise infrastructure.</p>
+            <div class="project-tags">
+              <span class="tag">#Shell</span>
+              <span class="tag">#Ansible</span>
+              <span class="tag">#CIS_Benchmarks</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic -->
+    <section class="section" id="academic">
+      <div class="container">
+        <h2 class="section-title"><span class="title-bar">|</span> ACADEMIC_NODE</h2>
+        <div class="academic-grid">
+          <article class="academic-card glass-card">
+            <div class="academic-icon">🎓</div>
+            <h3 class="academic-title">Holberton School</h3>
+            <p class="academic-degree">Full Stack Software Engineering</p>
+            <p class="academic-focus">Focus on Linux, C, and infrastructure fundamentals</p>
+          </article>
+          <article class="academic-card glass-card">
+            <div class="academic-icon">📚</div>
+            <h3 class="academic-title">Sfax University</h3>
+            <p class="academic-degree">Computer Science Bachelor</p>
+            <p class="academic-focus">Focus on networking and information security</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-logs">
+        <p class="log-entry"><span class="log-time">[09:42:12]</span> LOAD_PORTFOLIO: <span class="log-success">SUCCESS</span></p>
+        <p class="log-entry"><span class="log-time">[09:42:18]</span> FETCHING_EXPERIENCE: 2 NODES FOUND</p>
+        <p class="log-entry"><span class="log-time">[10:05:45]</span> SYNCING GITHUB REPOS... <span class="log-success">[COMPLETE]</span></p>
+      </div>
+      <div class="footer-links">
+        <a href="#">ST_LOGS</a>
+        <a href="#">PUBLIC_KEY</a>
+        <a href="#">NETWORK_MAP</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2024 DEVSEC_KERNEL. ALL RIGHTS RESERVED. <span class="encrypted">[STATUS: ENCRYPTED]</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
